@@ -16,11 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import mi_vista
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
-
-urlpatterns = [
     path('mi-vista/', mi_vista, name='mi-vista'),
 ]
